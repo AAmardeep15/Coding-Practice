@@ -1,67 +1,55 @@
 public class day11 {
-    
-    // Definition for a simple Linked List Node
-    static class Node {
-        int data;
-        Node next;
-        
-        Node(int data) {
-            this.data = data;
-            this.next = null;
-        }
+    class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode(int val) {
+        this.val = val;
+        this.next = null;
     }
-    
-    /**
-     * Method to reverse the linked list
-     * @param head Head of the original linked list
-     * @return Head of the reversed linked list
-     */
-    public static Node reverseList(Node head) {
-        Node prev = null;
-        Node current = head;
-        Node next = null;
-        
-        while (current != null) {
-            // 1. Store the next node
-            next = current.next;
-            
-            // 2. Reverse the current node's pointer to point to prev
-            current.next = prev;
-            
-            // 3. Move pointers one position ahead
-            prev = current;
-            current = next;
+}
+
+public class ReverseLinkedList {
+
+    public static ListNode reverseList(ListNode head) {
+        ListNode prev = null;
+        ListNode curr = head;
+
+        while (curr != null) {
+            ListNode nextTemp = curr.next; // store next
+            curr.next = prev;              // reverse link
+            prev = curr;                  // move prev forward
+            curr = nextTemp;              // move curr forward
         }
-        
-        // At the end, 'prev' will be pointing to the new head
-        return prev;
+
+        return prev; // new head
     }
-    
-    // Helper method to print the linked list
-    public static void printList(Node head) {
-        Node temp = head;
+
+    // Helper function to print list
+    public static void printList(ListNode head) {
+        ListNode temp = head;
         while (temp != null) {
-            System.out.print(temp.data + " -> ");
+            System.out.print(temp.val + " -> ");
             temp = temp.next;
         }
         System.out.println("null");
     }
 
     public static void main(String[] args) {
-        // Creating a simple linked list: 1 -> 2 -> 3 -> 4 -> 5 -> null
-        Node head = new Node(1);
-        head.next = new Node(2);
-        head.next.next = new Node(3);
-        head.next.next.next = new Node(4);
-        head.next.next.next.next = new Node(5);
-        
-        System.out.println("Original Linked List:");
+        // Creating list: 1 -> 2 -> 3 -> 4 -> 5
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(2);
+        head.next.next = new ListNode(3);
+        head.next.next.next = new ListNode(4);
+        head.next.next.next.next = new ListNode(5);
+
+        System.out.print("Original: ");
         printList(head);
-        
-        // Reversing the linked list
+
         head = reverseList(head);
-        
-        System.out.println("\nReversed Linked List:");
+
+        System.out.print("Reversed: ");
         printList(head);
     }
+}
 }
