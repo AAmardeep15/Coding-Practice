@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class day8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the number of terms for the Fibonacci series: ");
+        System.out.print("Enter the number of the terms for the Fibonacci series: ");
         
         if (scanner.hasNextInt()) {
             int n = scanner.nextInt();
