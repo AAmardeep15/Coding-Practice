@@ -16,13 +16,11 @@ public class day8 {
 
                 for (int i = 1; i <= n; ++i) {
                     System.out.print(firstTerm + " ");
-
-                    // compute the next term
                     int nextTerm = firstTerm + secondTerm;
                     firstTerm = secondTerm;
                     secondTerm = nextTerm;
                 }
-                System.out.println(); // For a clean new line at the end
+                System.out.println();
             }
         } else {
             System.out.println("Invalid input: Please enter a positive integer.");
