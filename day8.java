@@ -25,7 +25,7 @@ public class day8 {
                 System.out.println(); // For a clean new line at the end
             }
         } else {
-            System.out.println("Invalid input. Please enter a positive integer.");
+            System.out.println("Invalid input: Please enter a positive integer.");
         }
         
         scanner.close();
