@@ -6,11 +6,9 @@ public class day10 {
         System.out.print("Enter a string: ");
         String input = scanner.nextLine();
         
-        // Count the number of words/strings in the input
         if (input == null || input.trim().isEmpty()) {
             System.out.println("Number of words: 0");
         } else {
-            // Split by whitespace
             String[] words = input.trim().split("\\s+");
             System.out.println("Number of words (strings) in the input: " + words.length);
         }
