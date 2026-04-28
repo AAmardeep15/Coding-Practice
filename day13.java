@@ -50,10 +50,7 @@ public class day5 {
         
         // Creating a sample binary tree
         //       1
-        //     /   \
-        //    2     3
-        //   / \
-        //  4   5
+        
         tree.root = new Node(1);
         tree.root.left = new Node(2);
         tree.root.right = new Node(3);
