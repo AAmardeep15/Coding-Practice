@@ -20,7 +20,6 @@ public record day016() {
             root = null;
         }
 
-        // Inorder traversal: Left, Root, Right
         void printInorder(Node node) {
             if (node == null)
                 return;
