@@ -1,4 +1,6 @@
+public class day014 {
 
+}
 
 class Node {
     int data;
