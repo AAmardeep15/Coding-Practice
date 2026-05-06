@@ -12,7 +12,7 @@ public class day8 {
                 System.out.println("Please enter a positive integer.");
             } else {
                 int firstTerm = 0, secondTerm = 1;
-                System.out.println("Fibonacci Series upto" + n + " terms:");
+                System.out.println("Fibonacci Series up to" + n + " terms:");
 
                 for (int i = 1; i <= n; ++i) {
                     System.out.print(firstTerm + " ");
