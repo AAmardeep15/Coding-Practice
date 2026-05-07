@@ -34,8 +34,6 @@ public class day5 {
         printPreorder(node.left);
         printPreorder(node.right);
     }
-
-    // Postorder traversal: Left, Right, Root
     void printPostorder(Node node) {
         if (node == null)
             return;
