@@ -23,10 +23,8 @@ public class day5 {
         printInorder(node.left);
         System.out.print(node.data + " ");
         printInorder(node.right);
-    }
-
-    // Preorder traversal: Root, Left, Right
-    void printPreorder(Node node) {
+    }   
+     void printPreorder(Node node) {
         if (node == null)
             return;
 
