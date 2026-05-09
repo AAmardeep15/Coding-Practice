@@ -11,9 +11,8 @@ public class day10 {
             System.out.println("Number of words: 0");
         } else {
             String[] words = input.trim().split("\\s+");
-            System.out.println("Number of words (strings) in the input: " + words.length);
+            System.out.println("Number of words (strings) in the inputt: " + words.length);
         }
-        
         scanner.close();
     }
 }
