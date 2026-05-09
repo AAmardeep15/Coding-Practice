@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class day10 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a string: ");
+        System.out.print("Enter a String: ");
         String input = scanner.nextLine();
         
 
