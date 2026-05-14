@@ -8,7 +8,7 @@ class Node {
     }
 }
 
-public class day5 {
+public class day45 {
     Node root;
 
     public day5() {
