@@ -29,7 +29,6 @@ public record day016() {
             printInorder(node.right);
         }
 
-        // Preorder traversal: Root, Left, Right
         void printPreorder(Node node) {
             if (node == null)
                 return;
