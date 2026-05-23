@@ -1,4 +1,4 @@
-public class day014 {
+public class day50 {
 
 }
 
@@ -12,7 +12,7 @@ class Node {
     }
 }
 
-public class day5 {
+public class day50 {
     Node root;
 
     public day5() {
