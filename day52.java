@@ -1,4 +1,4 @@
-public class day48 {
+public class day52 {
 
 }
 
