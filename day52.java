@@ -12,7 +12,7 @@ class Node {
     }
 }
 
-public class day52 {
+public class day14 {
     Node root;
 
     public day5() {
